@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .a-navbar {
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+  }
+
+  .active {
+    float: left;
+    border-right: 1px solid #bbb;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #05c2dbee;
+  }
+
+  .navbar-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid #bbbaba;
+    background-color: #d3d2d2;
+  }
+
+  .navbar {
+    float: left;
+    border-right: 1px solid #bbb;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar:hover{
+    background-color: rgba(102, 102, 102, 0.555);
+  }
+
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 100%;
+    height: 300px;
+     
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: #5995DA;
+    height: 80px;
+  }
+  
+  
+  .content {
+    background-color: #EAEDF0;
+    width: 100%;
+    order: 0; 
+    display: flex;
+  }
+  
+  .feature-1 {
+    padding: 20px; 
+    background-color: #F5CF8E;
+  }
+  
+  .feature-2 {
+    padding: 20px; 
+    
+  }
+  
+  .part-a {
+    display: flex;
+    font-size: 28px;
+    margin: 25px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+  
+  .part-b {
+    display: flex;
+    font-size: 14px; 
+  }
+  
+  /* h2 {
+    font-size: 28px;
+    margin: 25px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  } */
+  
+  
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+    .feature-1,
+    .feature-2 {
+    width: 100%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .feature-1,
+    .feature-2 {
+    width: 50%;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    
+    .page {
+        width: 960px;
+        margin: 0 auto;
+      }
+      .feature-1,
+      .feature-2 {
+        width: 50%;
+      }
+      .header {
+        height: 400px;
+      }
+  }

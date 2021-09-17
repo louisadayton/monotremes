@@ -1,11 +1,11 @@
-body {
+/* body {
     color: #414141;
     background-color: #cdcdcd38;
     margin-top: 0px;
     margin-bottom: 50px;
     margin-left: 200px;
     margin-right: 200px;
-  }
+  } */
 
   * {
     margin: 0;
@@ -52,19 +52,16 @@ body {
   }
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border: 1px solid #bbbaba;
-    background-color: #d3d2d2;
+    list-style-type: circle;
   }
 
   a {
     text-decoration: underline;
+  }
+
+  .page {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .a-navbar {
@@ -83,6 +80,18 @@ body {
     background-color: #05c2dbee;
   }
 
+  .navbar-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid #bbbaba;
+    background-color: #d3d2d2;
+  }
+
   .navbar {
     float: left;
     border-right: 1px solid #bbb;
@@ -95,6 +104,19 @@ body {
 
   .navbar:hover{
     background-color: rgba(102, 102, 102, 0.555);
+  }
+
+  .section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    background-color: #EAEDF0;
+    height: 600px;
   }
 
   .center {
@@ -115,3 +137,17 @@ body {
  #puggle-pic {
    border: 5px solid #414141;
  }
+
+ /* Desktop Styles */
+@media only screen and (min-width: 501px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: #dd1111d8; /* Red */
+  }
+}
